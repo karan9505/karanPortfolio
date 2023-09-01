@@ -3,6 +3,7 @@ import Typed from 'typed.js'
 import './Portfolio.css'
 import 'animate.css'
 import WOW from 'wowjs'
+import SkillsCard from './Components/SkillsCard'
 export default function Portfolio() {
   const el = React.useRef(null);
   React.useEffect(() => {
@@ -37,7 +38,7 @@ export default function Portfolio() {
             <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl'>Home</button>
             <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-1s'>About</button>
             <a href='#mySkillsDiv'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-2s'>Skills</button></a>
-            <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-3s'>Projects</button>
+            <a href='#myProjects'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-3s'>Projects</button></a>
             <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-4s'>Contact Me</button>
           </div>
         </div>
@@ -52,27 +53,51 @@ export default function Portfolio() {
           </h1>
         </div>
         <div className='flex items-center justify-center animate__animated animate__backInUp'>
-          <img src='../Images/Astro.png' alt='Not' className='h-96 text-justify animate__animated animate__shakeY animate__infinite pt-10 lg:pt-0' id="astroLogo"></img>
+          <img src='../Images/Astro.png' alt='Not' className='h-96 wow animate__animated animate__shakeY animate__infinite pt-10 lg:pt-0' id="astroLogo"></img>
         </div>
       </div>
 
-      <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-5 lg:mx-20 mx-10 mt-14 lg:pt-5' id="mySkillsDiv">
-        <div className='lg:col-span-3 md:col-span-2 col-span-1 my-16 md:justify-start justify-center flex text-white lg:text-6xl'>
-          <div className='wow animate__animated animate__bounceInLeft'>skills</div>
-          <div><h1>-</h1></div>
-          <div className='text-purple-500 wow animate__animated animate__bounceInDown'>And</div>
+      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:px-20 ' id="mySkillsDiv">
+        <div className='col-span-full my-16 lg:justify-start justify-center flex text-white md:text-6xl text-3xl'>
+          <div className='wow animate__animated animate__fadeInLeft'>skills</div>
           <div>-</div>
-          <div className='wow animate__animated animate__bounceInRight'>Technologies</div>
+          <div className='text-purple-500 wow animate__animated animate__fadeInDown'>And</div>
+          <div>-</div>
+          <div className='wow animate__animated animate__fadeInRight'>Technologies</div>
         </div>
 
-        <div className='bg-[rgba(217,70,239,0.4)] wow animate__animated animate__zoomInLeft lg:p-10 flex justify-center items-center rounded-2xl'>
-          <img src='../Images/C.png' className='h-36 animate__animated animate__bounce animate__infinite'></img>
+        <SkillsCard Dir='Up' ImgSrc='../Images/C.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/Python.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/JS.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/Datastructure.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/Mongo.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/Express.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/React.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/Node.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/HTML.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/CSS.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/Tailwind.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/Bootstrap.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/Git.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/Api.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/Postman.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/Netlify.png' />
+      </div>
+
+      <div className='grid md:grid-cols-3 lg:px-20' id="myProjects">
+        <div className=' col-span-full my-16 lg:justify-end justify-center flex text-white md:text-6xl text-3xl'>
+          <div className='wow animate__animated animate__fadeInLeft'>projects</div>
+          <div>-</div>
+          <div className='text-purple-500 wow animate__animated animate__fadeInDown'>And</div>
+          <div>-</div>
+          <div className='wow animate__animated animate__fadeInRight'>Experience</div>
         </div>
-        <div className='bg-[rgba(217,70,239,0.4)] wow animate__animated animate__zoomInUp lg:p-10 flex justify-center items-center rounded-2xl'>
-          <img src='../Images/C++.png' className='h-36 animate__animated animate__bounce animate__infinite'></img>
+        <div className='cols-span-1'>
+          <img src='../Images/Z.gif' className='h-96'></img>
         </div>
-        <div className='bg-[rgba(217,70,239,0.4)] wow animate__animated animate__zoomInRight lg:p-10 flex justify-center items-center rounded-2xl'>
-          <img src='../Images/Python.png' className='h-36 animate__animated animate__bounce animate__infinite'></img>
+        <div className='col-span-2 bg-white'>
+          <h1 className='text-purple-500 wow animate__animated animate__fadeInDown text-8xl'>ZOMATO CLONE</h1>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
         </div>
       </div>
     </>
