@@ -117,7 +117,7 @@ export default function Portfolio() {
 
       <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:mt-56' id="mySkillsDiv">
 
-        <div className='col-span-full'>
+        <div className='hidden md:block col-span-full'>
           <div className='col-span-full lg:justify-start justify-center flex text-white md:text-6xl text-2xl lg:pl-20 lg:pt-20 my-20'>
             <div className='wow animate__animated delayAnimate animate__zoomInLeft'>skills</div>
             <div>-</div>
@@ -126,15 +126,15 @@ export default function Portfolio() {
             <div className='wow animate__animated animate__zoomInRight delayAnimate'>Technologies</div>
           </div>
         </div>
-        {/* <div className='block md:hidden col-span-full'>
+        <div className='block md:hidden col-span-full'>
           <div className='col-span-full my-32 justify-center flex text-white md:text-6xl text-2xl '>
-            <div className='wow animate__animated delayAnimate animate__zoomInLeft'>skills</div>
+            <div className='wow animate__animated delayAnimate animate__fadeInUp'>skills</div>
             <div>-</div>
-            <div className='text-purple-500 wow animate__animated animate__zoomInUp delayAnimate'>And</div>
+            <div className='text-purple-500 wow animate__animated animate__fadeInUp delayAnimate'>And</div>
             <div>-</div>
-            <div className='wow animate__animated animate__zoomInRight delayAnimate'>Technologies</div>
+            <div className='wow animate__animated animate__fadeInUp delayAnimate'>Technologies</div>
           </div>
-        </div> */}
+        </div>
         
 
         <SkillsCard Dir='Up' ImgSrc='../Images/C.png' />
@@ -156,7 +156,7 @@ export default function Portfolio() {
       </div>
 
       <div className='grid grid-cols-3 lg:px-20 px-5' id="myProjects">
-        <div className='col-span-full'>
+        <div className='hidden md:block col-span-full'>
           <div className='col-span-full  lg:justify-end justify-center items-center flex text-white md:text-6xl text-2xl lg:mt-16'>
             <div className='wow animate__animated animate__zoomInLeft delayAnimate'>projects</div>
             <div>-</div>
@@ -165,7 +165,7 @@ export default function Portfolio() {
             <div className='wow animate__animated animate__zoomInRight delayAnimate'>Experience</div>
           </div>
         </div>
-        {/* <div className='block md:hidden col-span-full'>
+        <div className='block md:hidden col-span-full'>
           <div className='col-span-full  lg:justify-end justify-center items-center flex text-white md:text-6xl text-2xl mt-16'>
             <div className='wow animate__animated animate__fadeInUp delayAnimate'>projects</div>
             <div>-</div>
@@ -173,7 +173,7 @@ export default function Portfolio() {
             <div>-</div>
             <div className='wow animate__animated animate__fadeInUp delayAnimate'>Experience</div>
           </div>
-        </div> */}
+        </div>
         
         <ZomatoClone/>
         <C2WLib />
