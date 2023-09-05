@@ -8,20 +8,20 @@ export default function UpworkClone() {
       </div>
       <div className='lg:col-span-2 col-span-3 lg:order-0 flex flex-col lg:items-end items-center justify-center lg:order-6'>
 
-        {/* <div className='hidden md:block'> */}
+        <div className='hidden md:block'>
           <div className='text-purple-500  lg:text-8xl md:text-6xl text-4xl flex lg:my-16 mb-10 items-center wow animate__animated animate__shakeY animate__infinite' id="upworkCloneHead">
             <h1 className='wow animate__animated animate__fadeInLeft delayAnimate'>UPWORK</h1>
             <h1>-</h1>
             <h1 className='wow animate__animated animate__fadeInRight delayAnimate'>CLONE</h1>
           </div>
-        {/* </div> */}
-        {/* <div className='block md:hidden'>
+        </div>
+        <div className='block md:hidden'>
           <div className='text-purple-500  lg:text-8xl md:text-6xl text-4xl flex lg:my-16 mb-10 items-center wow animate__animated animate__shakeY animate__infinite' id="upworkCloneHead">
             <h1 className='wow animate__animated animate__fadeInUp delayAnimate'>UPWORK</h1>
             <h1>-</h1>
             <h1 className='wow animate__animated animate__fadeInUp delayAnimate'>CLONE</h1>
           </div>
-        </div> */}
+        </div>
 
         
         <div className='text-white flex gap-3 lg:mb-16 mb-10 items-center stretch'>

@@ -7,20 +7,20 @@ export default function C2WLib() {
         <img src='../Images/Code.gif' className='lg:h-64 h-36 rounded-2xl wow animate__animated animate__zoomIn' id="libLogo"></img>
       </div>
       <div className='lg:col-span-2 col-span-3 flex flex-col lg:items-start items-center justify-center lg:order-3'>
-        {/* <div className='hidden md:block'> */}
+        <div className='hidden md:block'>
           <div className='text-purple-500  lg:text-8xl md:text-6xl text-4xl flex lg:my-16 my-10 wow animate__animated animate__shakeY animate__infinite' id="codeLibraryHead" >
             <h1 className='wow animate__animated animate__fadeInLeft delayAnimate'>CODE</h1>
             <h1>-</h1>
             <h1 className='wow animate__animated animate__fadeInRight delayAnimate'>LIBRARY</h1>
           </div>
-        {/* </div>   */}
-        {/* <div className='block md:hidden'>
+        </div>
+        <div className='block md:hidden'>
           <div className='text-purple-500  lg:text-8xl md:text-6xl text-4xl flex lg:my-16 my-10 wow animate__animated animate__shakeY animate__infinite' id="codeLibraryHead" >
             <h1 className='wow animate__animated animate__fadeInUp delayAnimate'>CODE</h1>
             <h1>-</h1>
             <h1 className='wow animate__animated animate__fadeInUp delayAnimate'>LIBRARY</h1>
           </div>
-        </div> */}
+        </div>
         <div className='text-white flex gap-3 lg:mb-16 mb-10 items-center'>
           <h1>Technologies used</h1>
           <img src='../Images/C.png' className='lg:h-6 md:h4 h-3 wow animate__animated animate__bounce animate__infinite animate__delay-2s' alt='Not'></img>
