@@ -167,7 +167,7 @@ export default function Portfolio() {
         <SkillsCard Dir='Up' ImgSrc='../Images/Tailwind.png' />
         <SkillsCard Dir='Up' ImgSrc='../Images/Bootstrap.png' />
         <SkillsCard Dir='Up' ImgSrc='../Images/Git.png' />
-        <SkillsCard Dir='Up' ImgSrc='../Images/Api.png' />
+        <SkillsCard Dir='Up' ImgSrc='../Images/API.png' />
         <SkillsCard Dir='Up' ImgSrc='../Images/Postman.png' />
         <SkillsCard Dir='Up' ImgSrc='../Images/Netlify.png' />
       </div>
