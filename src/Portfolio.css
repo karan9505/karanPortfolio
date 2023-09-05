@@ -8,3 +8,37 @@
 #astroLogo{
   animation-duration: 35s;
 }
+.delayAnimate{
+  animation-delay: 0.5s;
+}
+#zoomCloneHead,#codeLibraryHead,#upworkCloneHead{
+  animation-duration: 10s;
+}
+#zomatoLogo,#libLogo,#upworkLogo{
+  animation-duration: 10s;
+}
+#phoneOptions{
+  top:0;
+  left:100%;
+  /* display: none; */
+  transition: 0.5s;
+}
+.phoneMenu{
+  font-family: 'Black Ops One', cursive;
+}
+#phoneMenuHome,#phoneMenuContact,#phoneMenuProjects,#phoneMenuSkills,#phoneMenuAbout{
+  display: none;
+  animation-duration: 2s;
+}
+#phoneMenuAbout{
+  animation-delay: 0.5s;
+}
+#phoneMenuSkills{
+    animation-delay: 1s;
+}
+#phoneMenuProjects {
+  animation-delay: 1.5s;
+}
+#phoneMenuContact {
+  animation-delay: 2s;
+}
