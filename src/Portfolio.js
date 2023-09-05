@@ -81,11 +81,13 @@ export default function Portfolio() {
       <div id="phoneOptions" className='fixed h-screen w-screen bg-[rgba(0,0,0,0.8)] z-[20]' onClick={(e) => { phoneViewDisable(e) }}>
         <img src='../Images/X.png' className='absolute h-5 right-5 top-7' id='X'></img>
         <div className='absolute grid bg-purple-850 content-center h-[44%] w-[98%] left-[2%] top-[28%] px-10 gap-10 rounded-3xl'>
-          <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
+          {/* <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
             <h1 id='phoneMenuHome'>HOME</h1>
-          </div>
+          </div> */}
           <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
-            <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuAbout'>ABOUT</h1>
+            <a href='#mySkillsDiv'>
+              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuAbout'>ABOUT</h1>
+            </a>
           </div>
           <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
             <a href='#mySkillsDiv'>
@@ -107,11 +109,11 @@ export default function Portfolio() {
         </div>
         <div className='hidden lg:block'>
           <div className='text-white flex justify-around items-center h-full'>
-            <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl'>Home</button>
-            <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-1s'>About</button>
-            <a href='#mySkillsDiv'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-2s'>Skills</button></a>
-            <a href='#myProjects'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-3s'>Projects</button></a>
-            <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-4s'>Contact Me</button>
+            {/* <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl'>Home</button> */}
+            <a href='#'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-0s'>abountMe</button></a>
+            <a href='#mySkillsDiv'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-1s'>skillsAndTech</button></a>
+            <a href='#myProjects'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-2s'>projects</button></a>
+            <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-4s'>contactMe</button>
           </div>
         </div>
         <div className='block lg:hidden flex items-center justify-end pe-7'>
