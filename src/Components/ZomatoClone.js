@@ -33,7 +33,7 @@ export default function ZomatoClone() {
           <img src='../Images/API.png' className='lg:h-6 md:h4 h-3 wow animate__animated animate__bounce animate__infinite animate__delay-0s' alt='Not'></img>
         </div>
 
-        <a href='https://www.youtube.com/watch?v=mBqUNr6FVvA' target='blank'><img src='../Images/YT.png' alt='Not' className='lg:h-10 md:h-8 h-5'></img></a>
+        <a href='https://www.youtube.com/watch?v=mBqUNr6FVvA' target='blank'><img src='../Images/YT.png' alt='Not' className='lg:h-10 md:h-8 h-5 md:mb-0 mb-2'></img></a>
         <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
 
           The "Zomato Clone" project is a feature-rich web application designed to replicate the functionality of the popular food delivery and restaurant discovery platform, Zomato. This project is built using the ReactJS framework for the frontend and the Spring Boot framework for the backend, offering a seamless user experience for both admins and users.</p>

@@ -33,7 +33,7 @@ export default function UpworkClone() {
           <img src='../Images/API.png' className='lg:h-6 md:h4 h-3 wow animate__animated animate__bounce animate__infinite animate__delay-0s' alt='Not'></img>
         </div>
 
-        <a href='https://www.youtube.com/watch?v=mBqUNr6FVvA' target='blank'><img src='../Images/YT.png' alt='Not' className='lg:h-6 md:h4 h-5'></img></a>
+        {/* <a href='https://www.youtube.com/watch?v=mBqUNr6FVvA' target='blank'><img src='../Images/YT.png' alt='Not' className='lg:h-6 md:h4 h-5'></img></a> */}
         <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
 
           The "Upwork Clone" project is a versatile online platform, closely resembling the popular freelancing website, Upwork. Built using cutting-edge technologies like Spring Boot for the backend and ReactJS for the frontend, it offers a seamless and responsive user experience.

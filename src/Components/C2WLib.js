@@ -27,7 +27,7 @@ export default function C2WLib() {
           <img src='../Images/GTK.png' className='lg:h-6 md:h4 h-3 wow animate__animated animate__bounce animate__infinite animate__delay-1s' alt='Not'></img>
           <img src='../Images/Glade.png' className='lg:h-6 md:h4 h-3 wow animate__animated animate__bounce animate__infinite animate__delay-0s' alt='Not'></img>
         </div>
-        <a href='https://www.youtube.com/watch?v=ZrevNMaIaW4' target='blank'><img src='../Images/YT.png' alt='Not' className='lg:h-6 md:h4 h-5'></img></a>
+        <a href='https://www.youtube.com/watch?v=ZrevNMaIaW4' target='blank'><img src='../Images/YT.png' alt='Not' className='lg:h-6 md:h4 h-5 md:mb-0 mb-2'></img></a>
         <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
           "Code Library" stands as a valuable resource for C programming aficionados, boasting an intuitive interface built with GTK and Glade. It's thoughtfully organized into five distinct sections, each dedicated to specific aspects of C programming. The initial section provides a foundational understanding, covering essential concepts, syntax, and best practices—a knowledge base for newcomers and a quick reference for seasoned developers.</p>
         <br></br>

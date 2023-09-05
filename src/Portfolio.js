@@ -79,22 +79,22 @@ export default function Portfolio() {
     <>
       <img src='../Images/LandBack.jpg' alt='Not' className='fixed top-0 left-0 h-screen w-screen z-[-1]'></img>
       <div id="phoneOptions" className='fixed h-screen w-screen bg-[rgba(0,0,0,0.8)] z-[20]' onClick={(e) => { phoneViewDisable(e) }}>
-        <img src='../Images/X.png' className='absolute h-5 right-5 top-7' id='X'></img>
-        <div className='absolute grid bg-purple-850 content-center h-[44%] w-[98%] left-[2%] top-[28%] px-10 gap-10 rounded-3xl'>
+        <img src='../Images/X.png' className='absolute h-[40px] w-[40px] p-2 bg-white right-5 top-5  rounded-lg' id='X'></img>
+        <div className='absolute grid bg-purple-850 content-center h-[44%] w-[98%] left-[2%] top-[28%] px-10 gap-10 rounded-3xl text-3xl'>
           {/* <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
             <h1 id='phoneMenuHome'>HOME</h1>
           </div> */}
-          <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
+          <div className='text-white flex justify-center items-center phoneMenu'>
             <a href='#'>
               <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuAbout'>{'<abountMe/>'}</h1>
             </a>
           </div>
-          <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
+          <div className='text-white  flex justify-center items-center phoneMenu'>
             <a href='#mySkillsDiv'>
               <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuSkills'>{'<skillsAndTech />'}</h1>
             </a>
           </div>
-          <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
+          <div className='text-white flex justify-center items-center phoneMenu'>
             <a href='#myProjects'><h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuProjects'>{'<projects/>'}</h1></a>
             
           </div>
