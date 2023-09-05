@@ -85,8 +85,8 @@ export default function Portfolio() {
             <h1 id='phoneMenuHome'>HOME</h1>
           </div> */}
           <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
-            <a href='#mySkillsDiv'>
-              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuAbout'>abountMe</h1>
+            <a href='#'>
+              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuAbout'>{'<abountMe/>'}</h1>
             </a>
           </div>
           <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
