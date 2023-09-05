@@ -7,7 +7,6 @@ import SkillsCard from './Components/SkillsCard'
 import ZomatoClone from './Components/ZomatoClone'
 import C2WLib from './Components/C2WLib'
 import UpworkClone from './Components/UpworkClone'
-import ScrollTrigger from 'react-scroll-trigger'
 export default function Portfolio() {
   const el = React.useRef(null);
   React.useEffect(() => {
@@ -58,10 +57,28 @@ export default function Portfolio() {
     document.getElementById('phoneMenuContact').style.display = 'none';
   }
 
+  // const scrolled = () => {
+  //   console.log('scroll');
+  // }
+
+  // document.addEventListener('scroll', scrolled);
+  window.addEventListener('scroll', () => {
+    if (document.documentElement.scrollTop === 0) {
+      document.getElementById("myNavbar").style.backgroundColor = 'rgba(0,0,0,0)';
+      document.getElementById("borderBottom").style.transform = "scale(1,1)";
+      // document.getElementById("myNavbar").classList.add('bg-opacity-40');
+    }
+    else {
+      // document.getElementById("myNavbar").classList.remove('bg-opacity-40');
+      document.getElementById("myNavbar").style.backgroundColor = 'rgba(0,0,0,0.8)';
+      document.getElementById("borderBottom").style.transform = `scale(${window.innerWidth},5)`;
+    }
+  });
+
   return (
     <>
       <img src='../Images/LandBack.jpg' alt='Not' className='fixed top-0 left-0 h-screen w-screen z-[-1]'></img>
-      <div id="phoneOptions" className='fixed h-screen w-screen bg-[rgba(0,0,0,0.8)] z-[1]' onClick={(e) => { phoneViewDisable(e) }}>
+      <div id="phoneOptions" className='fixed h-screen w-screen bg-[rgba(0,0,0,0.8)] z-[20]' onClick={(e) => { phoneViewDisable(e) }}>
         <img src='../Images/X.png' className='absolute h-5 right-5 top-7' id='X'></img>
         <div className='absolute grid bg-purple-850 content-center h-[44%] w-[98%] left-[2%] top-[28%] px-10 gap-10 rounded-3xl'>
           <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
@@ -84,7 +101,7 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      <nav className='fixed w-screen top-0 grid grid-cols-2 bg-black bg-opacity-25 z-10'>
+      <nav className='fixed w-screen top-0 grid grid-cols-2 z-10' id='myNavbar'>
         <div className='flex md:justify-start items-center'>
           <img className='animate__animated animate__backInLeft lg:h-28 h-20' src='../Images/KLogo.gif' alt='Not'></img>
         </div>
@@ -100,10 +117,11 @@ export default function Portfolio() {
         <div className='block lg:hidden flex items-center justify-end pe-7'>
           <img src='../Images/Options.png' alt='Not' className='h-10' onClick={()=>{phoneViewEnable()}}></img>
         </div>
+        <div id='borderBottom'></div>
       </nav>
 
       <div className='grid lg:grid-cols-2 lg:mb-0  lg:h-screen w-screen'>
-        <div className='text-white lg:pt-32 lg:pl-20 pt-32 px-5'>
+        <div className='text-white lg:pt-32 lg:pl-20 pt-44 px-5'>
           <h1 className='text-4xl font-semibold mb-3 animate__animated animate__backInDown'>Hi!i!i, i am</h1>
           <h1 ref={el} className='inline text-6xl md:text-8xl font-extrabold text-purple-500 '></h1>
           <h1 className='my-4 text-2xl animate__animated animate__backInUp'>Welcome to my profile</h1>
@@ -116,9 +134,8 @@ export default function Portfolio() {
       </div>
 
       <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:mt-56' id="mySkillsDiv">
-
         <div className='hidden md:block col-span-full'>
-          <div className='col-span-full lg:justify-start justify-center flex text-white md:text-6xl text-2xl lg:pl-20 lg:pt-20 my-20'>
+          <div className='col-span-full lg:justify-start justify-center flex text-white md:text-6xl text-xl lg:pl-20 lg:pt-20 my-20'>
             <div className='wow animate__animated delayAnimate animate__zoomInLeft'>skills</div>
             <div>-</div>
             <div className='text-purple-500 wow animate__animated animate__zoomInUp delayAnimate'>And</div>
@@ -127,7 +144,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className='block md:hidden col-span-full'>
-          <div className='col-span-full my-32 justify-center flex text-white md:text-6xl text-2xl '>
+          <div className='col-span-full my-32 justify-center flex text-white md:text-6xl text-xl '>
             <div className='wow animate__animated delayAnimate animate__fadeInUp'>skills</div>
             <div>-</div>
             <div className='text-purple-500 wow animate__animated animate__fadeInUp delayAnimate'>And</div>
@@ -155,9 +172,9 @@ export default function Portfolio() {
         <SkillsCard Dir='Up' ImgSrc='../Images/Netlify.png' />
       </div>
 
-      <div className='grid grid-cols-3 lg:px-20 px-5' id="myProjects">
+      <div className='grid grid-cols-3 lg:mt-56 lg:px-20 px-5' id="myProjects">
         <div className='hidden md:block col-span-full'>
-          <div className='col-span-full  lg:justify-end justify-center items-center flex text-white md:text-6xl text-2xl lg:mt-16'>
+          <div className='col-span-full  justify-end items-center flex text-white md:text-6xl text-2xl lg:pt-20 my-20'>
             <div className='wow animate__animated animate__zoomInLeft delayAnimate'>projects</div>
             <div>-</div>
             <div className='text-purple-500 wow animate__animated animate__zoomInUp delayAnimate'>And</div>
@@ -166,7 +183,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className='block md:hidden col-span-full'>
-          <div className='col-span-full  lg:justify-end justify-center items-center flex text-white md:text-6xl text-2xl mt-16'>
+          <div className='col-span-full  flex justify-center items-center text-white md:text-6xl text-2xl mt-32'>
             <div className='wow animate__animated animate__fadeInUp delayAnimate'>projects</div>
             <div>-</div>
             <div className='text-purple-500 wow animate__animated animate__fadeInUp delayAnimate'>And</div>
