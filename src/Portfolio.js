@@ -86,20 +86,20 @@ export default function Portfolio() {
           </div> */}
           <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
             <a href='#mySkillsDiv'>
-              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuAbout'>ABOUT</h1>
+              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuAbout'>abountMe</h1>
             </a>
           </div>
           <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
             <a href='#mySkillsDiv'>
-              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuSkills'>SKILLS</h1>
+              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuSkills'>skillsAndTech</h1>
             </a>
           </div>
           <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
-            <a href='#myProjects'><h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuProjects'>PROJECTS</h1></a>
+            <a href='#myProjects'><h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuProjects'>projects</h1></a>
             
           </div>
           <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
-            <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuContact'>CONTACT</h1>
+            <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuContact'>contactMe</h1>
           </div>
         </div>
       </div>
@@ -146,7 +146,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className='block md:hidden col-span-full'>
-          <div className='col-span-full my-32 justify-center flex text-white md:text-6xl text-xl '>
+          <div className='col-span-full my-32 justify-center flex text-white md:text-6xl text-2xl '>
             <div className='wow animate__animated delayAnimate animate__fadeInUp'>skills</div>
             <div>-</div>
             <div className='text-purple-500 wow animate__animated animate__fadeInUp delayAnimate'>And</div>
