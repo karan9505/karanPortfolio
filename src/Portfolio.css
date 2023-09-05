@@ -31,16 +31,16 @@
   animation-duration: 2s;
 }
 #phoneMenuAbout{
-  animation-delay: 0.3s;
+  animation-delay: 0s;
 }
 #phoneMenuSkills{
-    animation-delay: 0.6s;
+    animation-delay: 0.3s;
 }
 #phoneMenuProjects {
-  animation-delay: 0.9s;
+  animation-delay: 0.6s;
 }
 #phoneMenuContact {
-  animation-delay: 1.2s;
+  animation-delay: 0.9s;
 }
 #myNavbar{
   background-color: rgba(0,0,0,0);
