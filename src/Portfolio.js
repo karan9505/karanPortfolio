@@ -32,8 +32,8 @@ export default function Portfolio() {
 
   const phoneViewEnable = () => {
     document.getElementById('phoneOptions').style.transform = 'translateX(-100%)';
-    document.getElementById('phoneMenuHome').style.display = 'block';
-    document.getElementById('phoneMenuHome').setAttribute('class', 'animate__animated wow animate__bounceInLeft');
+    // document.getElementById('phoneMenuHome').style.display = 'block';
+    // document.getElementById('phoneMenuHome').setAttribute('class', 'animate__animated wow animate__bounceInLeft');
 
     document.getElementById('phoneMenuAbout').style.display = 'block';
     document.getElementById('phoneMenuAbout').setAttribute('class', 'animate__animated wow animate__bounceInRight');
@@ -50,7 +50,7 @@ export default function Portfolio() {
 
   const phoneViewDisable = (e) => {
     document.getElementById('phoneOptions').style.transform = 'translateX(100%)';
-    document.getElementById('phoneMenuHome').style.display = 'none';
+    // document.getElementById('phoneMenuHome').style.display = 'none';
     document.getElementById('phoneMenuAbout').style.display = 'none';
     document.getElementById('phoneMenuSkills').style.display = 'none';
     document.getElementById('phoneMenuProjects').style.display = 'none';
