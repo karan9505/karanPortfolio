@@ -28,29 +28,27 @@ export default function C2WLib() {
           <img src='../Images/Glade.png' className='lg:h-6 md:h4 h-3 wow animate__animated animate__bounce animate__infinite animate__delay-0s' alt='Not'></img>
         </div>
         <a href='https://www.youtube.com/watch?v=ZrevNMaIaW4' target='blank'><img src='../Images/YT.png' alt='Not' className='lg:h-6 md:h4 h-5'></img></a>
-        <p className='text-white text-justify wow animate__animated animate__bounceInUp'>The "Code Library" project is a comprehensive resource for individuals looking to learn and explore the C programming language. This project leverages the power of C for the backend, while utilizing Glade and GTK for creating an intuitive and user-friendly graphical user interface (GUI). It serves as an excellent tool for programmers, both beginners and experienced, who seek to enhance their knowledge and coding skills in C.</p>
+        <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
+          "Code Library" stands as a valuable resource for C programming aficionados, boasting an intuitive interface built with GTK and Glade. It's thoughtfully organized into five distinct sections, each dedicated to specific aspects of C programming. The initial section provides a foundational understanding, covering essential concepts, syntax, and best practices—a knowledge base for newcomers and a quick reference for seasoned developers.</p>
         <br></br>
         <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
-          Theoretical Knowledge: The project's first section offers a rich repository of theoretical knowledge related to C programming. Users can access explanations, concepts, and examples covering the fundamentals of C, making it an ideal starting point for newcomers.</p>
+          The second section is a treasure trove of numerical programming, offering an array of C code snippets and programs related to number series and patterns. This aids users in honing their mathematical problem-solving skills within the C language.</p>
         <br></br>
         <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
-          Number Series: In the second section, users can find a collection of C code snippets and programs related to number series. These codes range from basic arithmetic sequences to more complex numerical patterns, providing valuable insights into mathematical programming in C.</p>
+          Moving forward, the third section immerses users in string manipulation, offering code examples for various operations like concatenation, parsing, and searching.</p>
         <br></br>
         <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
-          String Manipulation: The third section focuses on string manipulation. Users can explore a variety of C code examples related to string handling, including string concatenation, parsing, and searching, among others.</p>
+          The fourth section focuses on array operations, showcasing code snippets for array manipulation and sorting algorithms, enriching users' grasp of array-related tasks.</p>
         <br></br>
 
         <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
-          Array Operations: The fourth section is dedicated to arrays. It contains a diverse set of C code samples showcasing array manipulation, sorting algorithms, and other array-related operations.
+          The fifth section delves into linked lists, providing C code implementations for singly and doubly linked lists.
         </p>
         <br></br>
 
         <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
-          Code Browsing: Users can easily navigate through the various sections of the project, exploring theoretical knowledge, number series, string manipulation, array operations, and linked lists.</p>
+          Remarkably, "Code Library" not only allows users to browse and study code but also empowers them to download code snippets in plain text (txt) format for offline use, promoting active learning and practical application of C programming concepts. This multifaceted project offers a holistic learning experience, making it an indispensable resource for learners and developers alike, fostering a deeper understanding of C programming and enhancing coding proficiency.</p>
         <br></br>
-
-        <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
-          Code Download: To facilitate learning and code usage, the project allows users to download any code snippet or program they find interesting or useful. The code can be downloaded in a plain text format (txt), making it easily accessible for offline reference and practice.</p>
       </div>
 
     </>

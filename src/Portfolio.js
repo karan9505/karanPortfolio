@@ -91,15 +91,15 @@ export default function Portfolio() {
           </div>
           <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
             <a href='#mySkillsDiv'>
-              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuSkills'>skillsAndTech</h1>
+              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuSkills'>{'<skillsAndTech />'}</h1>
             </a>
           </div>
           <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
-            <a href='#myProjects'><h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuProjects'>projects</h1></a>
+            <a href='#myProjects'><h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuProjects'>{'<projects/>'}</h1></a>
             
           </div>
           <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
-            <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuContact'>contactMe</h1>
+            <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuContact'>{'<contactMe/>'}</h1>
           </div>
         </div>
       </div>
@@ -110,10 +110,10 @@ export default function Portfolio() {
         <div className='hidden lg:block'>
           <div className='text-white flex justify-around items-center h-full'>
             {/* <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl'>Home</button> */}
-            <a href='#'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-0s'>abountMe</button></a>
-            <a href='#mySkillsDiv'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-1s'>skillsAndTech</button></a>
-            <a href='#myProjects'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-2s'>projects</button></a>
-            <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-4s'>contactMe</button>
+            <a href='#'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-0s'>{'<abountMe/>'}</button></a>
+            <a href='#mySkillsDiv'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-1s'>{'<skillsAndTech/>'}</button></a>
+            <a href='#myProjects'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-2s'>{'<projects/>'}</button></a>
+            <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-3s'>{'<contactMe/>'}</button>
           </div>
         </div>
         <div className='block lg:hidden flex items-center justify-end pe-7'>
@@ -127,7 +127,14 @@ export default function Portfolio() {
           <h1 className='text-4xl font-semibold mb-3 animate__animated animate__backInDown'>Hi!i!i, i am</h1>
           <h1 ref={el} className='inline text-6xl md:text-8xl font-extrabold text-purple-500 '></h1>
           <h1 className='my-4 text-2xl animate__animated animate__backInUp'>Welcome to my profile</h1>
-          <h1 className='text-justify animate__animated animate__backInRight '>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+          <h1 className='text-justify animate__animated animate__backInRight '>
+            Hello, I'm Karan S Khedkar, a passionate tech enthusiast who embarked on the exciting journey of coding and programming just last year.
+            <br></br>
+            In a relatively short span of time, I've delved into the world of programming languages, gaining proficiency in languages such as C, C++, Python, JavaScript, HTML, CSS...
+            <br></br>
+            My curiosity led me to explore powerful frameworks like ReactJS and Node.js, which have become integral parts of my toolkit. Currently, I'm fully engaged in the realm of MERN stack development, where I bring ideas to life through dynamic web applications.
+            <br></br>
+            I invite you to explore my portfolio, where you'll find examples of my work showcasing my coding journey so far. Whether you have a project in mind, want to discuss technology trends, or simply share your enthusiasm for tech, feel free to get in touch. Together, we can build remarkable digital experiences.
           </h1>
         </div>
         <div className='flex items-center justify-center wow animate__animated animate__backInUp  mt-20'>
