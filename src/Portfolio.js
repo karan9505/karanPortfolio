@@ -76,6 +76,28 @@ export default function Portfolio() {
   const showContactForm = () => {
     document.getElementById('contactFormLeft').style.transform = 'translateX(100%)';
     document.getElementById('contactFormRight').style.transform = 'translateX(-100%)';
+    document.getElementById('contactFormMainWrap').style.display = 'block';
+    document.getElementById('contactFormMainWrap').setAttribute('class', 'fixed top-[5%] lg:left-[35%] h-[90%] lg:w-[30%] left-[5%] w-[90%] z-[3] animate__animated wow animate__zoomIn rounded-3xl grid bg-cover bg-no-repeat bg-center')
+    
+    document.getElementById('contactName').style.display = 'flex';
+    document.getElementById('contactName').setAttribute('class', 'flex-col items-center justify-center w-[100%] wow animate__animated animate__bounceInLeft');
+
+    document.getElementById('contactPhone').style.display = 'flex';
+    document.getElementById('contactPhone').setAttribute('class', 'flex-col items-center justify-center w-[100%] wow animate__animated animate__bounceInRight');
+
+    document.getElementById('contactEmail').style.display = 'flex';
+    document.getElementById('contactEmail').setAttribute('class', 'flex-col items-center justify-center w-[100%] wow animate__animated animate__bounceInLeft');
+
+    document.getElementById('contactMessage').style.display = 'flex';
+    document.getElementById('contactMessage').setAttribute('class', 'flex-col items-center justify-center w-[100%] wow animate__animated animate__bounceInRight');
+
+    document.getElementById('contactSend').style.display = 'flex';
+    document.getElementById('contactSend').setAttribute('class', 'flex-col items-center justify-center w-[100%] wow animate__animated animate__bounceInLeft');
+  }
+
+  const showPhoneContactForm = () => {
+    phoneViewDisable();
+    showContactForm();
   }
 
   return (
@@ -91,20 +113,20 @@ export default function Portfolio() {
           </div> */}
           <div className='text-white flex justify-center items-center phoneMenu'>
             <a href='#'>
-              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuAbout'>{'<abountMe/>'}</h1>
+              <h1 id='phoneMenuAbout'>{'<abountMe/>'}</h1>
             </a>
           </div>
           <div className='text-white  flex justify-center items-center phoneMenu'>
             <a href='#mySkillsDiv'>
-              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuSkills'>{'<skillsAndTech/>'}</h1>
+              <h1 id='phoneMenuSkills'>{'<skillsAndTech/>'}</h1>
             </a>
           </div>
           <div className='text-white flex justify-center items-center phoneMenu'>
-            <a href='#myProjects'><h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuProjects'>{'<projects/>'}</h1></a>
+            <a href='#myProjects'><h1 id='phoneMenuProjects'>{'<projects/>'}</h1></a>
             
           </div>
           <div className='text-white flex justify-center items-center phoneMenu'>
-            <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuContact'>{'<contactMe/>'}</h1>
+            <h1 id='phoneMenuContact' onClick={()=>{showPhoneContactForm()}}>{'<contactMe/>'}</h1>
           </div>
         </div>
       </div>
