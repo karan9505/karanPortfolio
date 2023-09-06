@@ -63,24 +63,30 @@ export default function Portfolio() {
 
   // document.addEventListener('scroll', scrolled);
   window.addEventListener('scroll', () => {
+    // console.log(document.documentElement.scrollTop)
+    let rewWidth = Math.ceil((document.documentElement.scrollTop / 4552) * 100);
+    console.log("REQ : ",rewWidth);
     if (document.documentElement.scrollTop === 0) {
       document.getElementById("myNavbar").style.backgroundColor = 'rgba(0,0,0,0)';
-      document.getElementById("borderBottom").style.transform = "scale(1,1)";
+      // document.getElementById("borderBottom").style.transform = "scale(1,1)";
       // document.getElementById("myNavbar").classList.add('bg-opacity-40');
     }
     else {
       // document.getElementById("myNavbar").classList.remove('bg-opacity-40');
       document.getElementById("myNavbar").style.backgroundColor = 'rgba(0,0,0,0.8)';
-      document.getElementById("borderBottom").style.transform = `scale(${window.innerWidth},5)`;
+      // document.getElementById("borderBottom").style.transform = `scale(${window.innerWidth},5)`;
     }
+    document.getElementById("borderBottom").style.width =`${rewWidth}%`;
   });
 
   return (
     <>
-      <img src='../Images/LandBack.jpg' alt='Not' className='fixed top-0 left-0 h-screen w-screen z-[-1]'></img>
+      <div className='fixed top-0 left-0 h-screen w-screen z-[-1] bg-cover bg-no-repeat bg-center' style={{backgroundImage:'url(../Images/LandBack.jpg)'}}>
+      </div>
+      {/* <img src='../Images/LandBack.jpg' alt='Not' className=''></img> */}
       <div id="phoneOptions" className='fixed h-screen w-screen bg-[rgba(0,0,0,0.8)] z-[20]' onClick={(e) => { phoneViewDisable(e) }}>
         <img src='../Images/X.png' className='absolute h-[40px] w-[40px] p-2 bg-white right-5 top-5  rounded-lg' id='X'></img>
-        <div className='absolute grid bg-purple-850 content-center h-[44%] w-[98%] left-[2%] top-[28%] px-10 gap-10 rounded-3xl text-3xl'>
+        <div className='absolute grid bg-purple-850 content-center h-[60%] w-[100%] top-[20%] gap-24 rounded-3xl text-4xl '>
           {/* <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
             <h1 id='phoneMenuHome'>HOME</h1>
           </div> */}
@@ -91,23 +97,23 @@ export default function Portfolio() {
           </div>
           <div className='text-white  flex justify-center items-center phoneMenu'>
             <a href='#mySkillsDiv'>
-              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuSkills'>{'<skillsAndTech />'}</h1>
+              <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuSkills'>{'<skillsAndTech/>'}</h1>
             </a>
           </div>
           <div className='text-white flex justify-center items-center phoneMenu'>
             <a href='#myProjects'><h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuProjects'>{'<projects/>'}</h1></a>
             
           </div>
-          <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
+          <div className='text-white flex justify-center items-center phoneMenu'>
             <h1 className=' animate__animated wow animate__bounceInDown' id='phoneMenuContact'>{'<contactMe/>'}</h1>
           </div>
         </div>
       </div>
-      <nav className='fixed w-screen top-0 grid grid-cols-2 z-10' id='myNavbar'>
-        <div className='flex md:justify-start items-center'>
+      <nav className='fixed w-screen top-0 grid grid-cols-8 z-10' id='myNavbar'>
+        <div className='flex md:justify-start items-center lg:col-span-2 col-span-4'>
           <img className='animate__animated animate__backInLeft lg:h-28 h-20' src='../Images/KLogo.gif' alt='Not'></img>
         </div>
-        <div className='hidden lg:block'>
+        <div className='hidden lg:block col-span-6'>
           <div className='text-white flex justify-around items-center h-full'>
             {/* <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl'>Home</button> */}
             <a href='#'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-0s'>{'<abountMe/>'}</button></a>
@@ -116,7 +122,7 @@ export default function Portfolio() {
             <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-3s'>{'<contactMe/>'}</button>
           </div>
         </div>
-        <div className='block lg:hidden flex items-center justify-end pe-7'>
+        <div className='block lg:hidden flex items-center justify-end pe-7 col-span-4'>
           <img src='../Images/Options.png' alt='Not' className='h-10' onClick={()=>{phoneViewEnable()}}></img>
         </div>
         <div id='borderBottom'></div>
