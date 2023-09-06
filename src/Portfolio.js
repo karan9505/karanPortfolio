@@ -74,6 +74,8 @@ export default function Portfolio() {
   });
 
   const showContactForm = () => {
+    let objDiv = document.getElementById('contactSlides');
+    objDiv.scrollTop = 0;
     document.getElementById('contactFormLeft').style.transform = 'translateX(100%)';
     document.getElementById('contactFormRight').style.transform = 'translateX(-100%)';
     document.getElementById('contactFormMainWrap').style.display = 'block';
