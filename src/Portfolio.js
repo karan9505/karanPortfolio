@@ -92,7 +92,7 @@ export default function Portfolio() {
     document.getElementById('contactMessage').setAttribute('class', 'flex-col items-center justify-center w-[100%] wow animate__animated animate__bounceInRight');
 
     document.getElementById('contactSend').style.display = 'flex';
-    document.getElementById('contactSend').setAttribute('class', 'flex-col items-center justify-center w-[100%] wow animate__animated animate__bounceInLeft');
+    document.getElementById('contactSend').setAttribute('class', 'flex-col items-center justify-center wow animate__animated animate__bounceInLeft bg-white w-[80%] h-10 text-slate-800 rounded-3xl overflow-hidden');
   }
 
   const showPhoneContactForm = () => {

@@ -71,3 +71,12 @@
 #contactSend{
   display: none;
 }
+#contactSlides{
+  scroll-behavior: smooth;
+}
+#esuccess1,
+#esuccess2,
+#esuccess3{
+  font-family: 'Black Ops One', cursive;
+  animation-duration: 5s;
+}
