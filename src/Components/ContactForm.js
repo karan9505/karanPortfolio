@@ -17,7 +17,7 @@ export default function ContactForm() {
   document.getElementById('contactFormRight').style.transform = 'translateX(100%)';
   document.getElementById('contactFormMainWrap').setAttribute('class', 'fixed top-[5%] lg:left-[35%] h-[90%] lg:w-[30%] left-[5%] w-[90%] z-[3] animate__animated wow animate__zoomOut rounded-3xl grid bg-cover bg-no-repeat bg-center');
   let objDiv = document.getElementById('contactSlides');
-  objDiv.scrollTop =0;
+  objDiv.scrollTop = 0;
   setTimeout(() => {
    document.getElementById('contactFormMainWrap').style.display = 'none';
   }, 500)
@@ -26,6 +26,8 @@ export default function ContactForm() {
   setPhone('');
   setEmail('');
   setMessage('');
+  document.getElementById('formLoader').classList.replace('visible', 'hidden')
+
  }
 
  const sendEmail = () => {
@@ -49,8 +51,7 @@ export default function ContactForm() {
    setMsgText('<empty-Message-Field/>')
   }
 
-  if (from_name !== '' && (Number(phone)>999999999) && email !== '' && message !== '') {
-   console.log('Sending message');
+  if (from_name !== '' && (Number(phone) > 999999999) && email !== '' && message !== '') {
    axios.post('https://api.emailjs.com/api/v1.0/email/send', {
     service_id: 'service_fbhfnnp',
     template_id: 'template_5egq49l',
@@ -64,16 +65,17 @@ export default function ContactForm() {
     }
    })
     .then((response) => {
-    if(response.data === 'OK'){
-     let objDiv = document.getElementById('contactSlides');
-     objDiv.scrollTop = objDiv.scrollHeight;
+     if (response.data === 'OK') {
+      let objDiv = document.getElementById('contactSlides');
+      objDiv.scrollTop = objDiv.scrollHeight;
      }
     })
     .catch((error) => {
      console.log(error.message)
     })
+   document.getElementById('formLoader').classList.replace('hidden', 'visible')
   }
-  
+
  }
 
  const dataIntake = (e) => {
@@ -108,38 +110,38 @@ export default function ContactForm() {
 
  return (
   <>
-   <div className='fixed top-0 left-[-50%] h-screen w-[50%] bg-[rgba(0,0,0,0.9)] z-[2]' id="contactFormLeft"> 
+   <div className='fixed top-0 left-[-50%] h-screen w-[50%] bg-[rgba(0,0,0,0.9)] z-[2]' id="contactFormLeft">
    </div>
 
-   
-   
+
+
    <div id='contactFormMainWrap' className='fixed top-[5%] lg:left-[35%] h-[90%] lg:w-[30%] left-[5%] w-[90%] z-[3] animate__animated wow animate__zoomIn rounded-3xl grid bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url(../Images/ContactBack.jpg)' }}>
     <div className='absolute top-[2%] left-[2%] h-[96%] w-[96%] overflow-hidden' id='contactSlides'>
-     <div className='absolute top-0 left-0  h-[100%] w-[100%] flex flex-col items-center justify-around text-xl text-white bg-green-700'>
+     <div className='absolute top-0 left-0  h-[100%] w-[100%] flex flex-col items-center justify-around text-xl text-white'>
+      <img src='../Images/ContactLoader.gif' alt='Not' className='absolute h-[20%] hidden' id='formLoader'></img>
       <h1 className='text-3xl wow animate__animated animate__flash animate__infinite'>{'<contactForm/>'}</h1>
-
       <div id='contactName' className='flex flex-col items-center justify-center w-[100%] wow animate__animated animate__bounceInLeft'>
        <label htmlFor='name' className='mb-3' id='nameLabel'>{nameText}</label>
-       <input type='text' className='w-[80%] p-2 outline-0 rounded-lg text-black bg-[rgba(255,255,255,0.2)]' placeholder='name.......' id='from_name' onChange={(e)=>{dataIntake(e)}} value={from_name} onClick={()=>{resetFields()}}></input>
+       <input type='text' className='w-[80%] p-2 outline-0 rounded-lg bg-[rgba(255,255,255,0.2)]' placeholder='name.......' id='from_name' onChange={(e) => { dataIntake(e) }} value={from_name} onClick={() => { resetFields() }}></input>
       </div>
 
       <div id='contactPhone' className='flex flex-col items-center justify-center w-[100%] wow animate__animated animate__bounceInRight'>
        <label htmlFor='phone' className='mb-3' id='phoneLabel'>{phoneText}</label>
-       <input type='number' className='w-[80%] p-2 outline-0 rounded-lg text-slate-800 bg-[rgba(255,255,255,0.2)]' placeholder='phone.......' id='phone' onChange={(e) => { dataIntake(e) }} value={phone} onClick={() => { resetFields() }}></input>
+       <input type='number' className='w-[80%] p-2 outline-0 rounded-lg  bg-[rgba(255,255,255,0.2)]' placeholder='phone.......' id='phone' onChange={(e) => { dataIntake(e) }} value={phone} onClick={() => { resetFields() }}></input>
       </div>
 
       <div id='contactEmail' className='flex flex-col items-center justify-center w-[100%] wow animate__animated animate__bounceInLeft'>
        <label htmlFor='email' className='mb-3' id='emailLabel'>{emailText}</label>
-       <input type='text' className='w-[80%] p-2 outline-0 rounded-lg text-slate-800 bg-[rgba(255,255,255,0.2)]' placeholder='e-mail.......' id='email' onChange={(e) => { dataIntake(e) }} value={email} onClick={() => { resetFields() }}></input>
+       <input type='text' className='w-[80%] p-2 outline-0 rounded-lg  bg-[rgba(255,255,255,0.2)]' placeholder='e-mail.......' id='email' onChange={(e) => { dataIntake(e) }} value={email} onClick={() => { resetFields() }}></input>
       </div>
 
       <div id='contactMessage' className='flex flex-col items-center justify-center w-[100%] wow animate__animated animate__bounceInRight'>
        <label htmlFor='message' className='mb-3' id='messageLabel'>{messageText}</label>
-       <textarea type='text' className='w-[80%] p-2 outline-0 rounded-lg text-slate-800 bg-[rgba(255,255,255,0.2)] resize-none' placeholder='message.......' id='message' onChange={(e) => { dataIntake(e) }} value={message} onClick={() => { resetFields() }}></textarea>
+       <textarea type='text' className='w-[80%] p-2 outline-0 rounded-lg  bg-[rgba(255,255,255,0.2)] resize-none' placeholder='message.......' id='message' onChange={(e) => { dataIntake(e) }} value={message} onClick={() => { resetFields() }}></textarea>
       </div>
 
-      <div id='contactSend' className='flex-col items-center justify-center wow animate__animated animate__bounceInLeft bg-white w-[80%] h-10 text-slate-800 rounded-3xl overflow-hidden' onClick={() => {sendEmail()}}>
-       <h1 className='z-[4]'>{'<launch-now/>'}</h1>
+      <div id='contactSend' className='flex-col items-center justify-center wow animate__animated animate__bounceInLeft bg-white w-[80%] h-10 text-slate-800 rounded-3xl overflow-hidden' onClick={() => { sendEmail() }}>
+       <h1 className='z-[4] font-bold'>{'<launch-now/>'}</h1>
       </div>
 
 
@@ -163,9 +165,9 @@ export default function ContactForm() {
 
 
    <div className=' fixed top-0 left-[100%] h-screen w-[50%] bg-[rgba(0,0,0,0.9)] z-[2]' id="contactFormRight">
-    <img src='../Images/X.png' className='absolute lg:h-[40px] lg:w-[40px] p-2 bg-white lg:right-5 lg:top-5 top-2 right-2  rounded-lg h-[30px] w-[30px]' id='X' onClick={()=>{hideContactForm()}}></img>
+    <img src='../Images/X.png' className='absolute lg:h-[40px] lg:w-[40px] p-2 bg-white lg:right-5 lg:top-5 top-2 right-2  rounded-lg h-[30px] w-[30px]' id='X' onClick={() => { hideContactForm() }}></img>
    </div>
-   </>
-    
-  )
+  </>
+
+ )
 }
