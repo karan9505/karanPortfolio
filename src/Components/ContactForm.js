@@ -163,7 +163,7 @@ export default function ContactForm() {
 
 
    <div className=' fixed top-0 left-[100%] h-screen w-[50%] bg-[rgba(0,0,0,0.9)] z-[2]' id="contactFormRight">
-    <img src='../Images/X.png' className='absolute lg:h-[40px] w-[40px] p-2 bg-white lg:right-5 lg:top-5 top-2 right-2  rounded-lg h-[30px] w-[30px]' id='X' onClick={()=>{hideContactForm()}}></img>
+    <img src='../Images/X.png' className='absolute lg:h-[40px] lg:w-[40px] p-2 bg-white lg:right-5 lg:top-5 top-2 right-2  rounded-lg h-[30px] w-[30px]' id='X' onClick={()=>{hideContactForm()}}></img>
    </div>
    </>
     
