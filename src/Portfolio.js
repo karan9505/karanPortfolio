@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Typed from 'typed.js'
 import './Portfolio.css'
 import 'animate.css'
@@ -7,7 +7,11 @@ import SkillsCard from './Components/SkillsCard'
 import ZomatoClone from './Components/ZomatoClone'
 import C2WLib from './Components/C2WLib'
 import UpworkClone from './Components/UpworkClone'
+import ContactForm from './Components/ContactForm'
 export default function Portfolio() {
+
+  // const [constactForm, setContactForm] = useState(false);
+
   const el = React.useRef(null);
   React.useEffect(() => {
     const typed = new Typed(el.current, {
@@ -57,27 +61,22 @@ export default function Portfolio() {
     document.getElementById('phoneMenuContact').style.display = 'none';
   }
 
-  // const scrolled = () => {
-  //   console.log('scroll');
-  // }
-
-  // document.addEventListener('scroll', scrolled);
   window.addEventListener('scroll', () => {
     // console.log(document.documentElement.scrollTop)
     let rewWidth = Math.ceil((document.documentElement.scrollTop / 4552) * 100);
-    console.log("REQ : ",rewWidth);
     if (document.documentElement.scrollTop === 0) {
       document.getElementById("myNavbar").style.backgroundColor = 'rgba(0,0,0,0)';
-      // document.getElementById("borderBottom").style.transform = "scale(1,1)";
-      // document.getElementById("myNavbar").classList.add('bg-opacity-40');
     }
     else {
-      // document.getElementById("myNavbar").classList.remove('bg-opacity-40');
       document.getElementById("myNavbar").style.backgroundColor = 'rgba(0,0,0,0.8)';
-      // document.getElementById("borderBottom").style.transform = `scale(${window.innerWidth},5)`;
     }
     document.getElementById("borderBottom").style.width =`${rewWidth}%`;
   });
+
+  const showContactForm = () => {
+    document.getElementById('contactFormLeft').style.transform = 'translateX(100%)';
+    document.getElementById('contactFormRight').style.transform = 'translateX(-100%)';
+  }
 
   return (
     <>
@@ -109,7 +108,7 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      <nav className='fixed w-screen top-0 grid grid-cols-8 z-10' id='myNavbar'>
+      <nav className='fixed w-screen top-0 grid grid-cols-8 z-[1]' id='myNavbar'>
         <div className='flex md:justify-start items-center lg:col-span-2 col-span-4'>
           <img className='animate__animated animate__backInLeft lg:h-28 h-20' src='../Images/KLogo.gif' alt='Not'></img>
         </div>
@@ -119,7 +118,7 @@ export default function Portfolio() {
             <a href='#'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-0s'>{'<abountMe/>'}</button></a>
             <a href='#mySkillsDiv'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-1s'>{'<skillsAndTech/>'}</button></a>
             <a href='#myProjects'><button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-2s'>{'<projects/>'}</button></a>
-            <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-3s'>{'<contactMe/>'}</button>
+            <button className='hover:border-b-2 h-8 animate__animated animate__backInDown text-2xl animate__delay-3s' onClick={()=>{showContactForm()}}>{'<contactMe/>'}</button>
           </div>
         </div>
         <div className='block lg:hidden flex items-center justify-end pe-7 col-span-4'>
@@ -210,6 +209,7 @@ export default function Portfolio() {
         <ZomatoClone/>
         <C2WLib />
         <UpworkClone />
+        <ContactForm/>
       </div>
     </>
 

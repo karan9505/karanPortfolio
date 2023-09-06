@@ -53,5 +53,9 @@
   background-color: rgb(168 85 247);
   bottom: 0%;
   left:-3px;
-  transition: 1s;
+  transition: 0.5s;
+  transition-timing-function:linear;
+}
+#contactFormRight,#contactFormLeft{
+  transition: 1S;
 }
