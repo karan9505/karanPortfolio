@@ -115,7 +115,7 @@ export default function ContactForm() {
    
    <div id='contactFormMainWrap' className='fixed top-[5%] lg:left-[35%] h-[90%] lg:w-[30%] left-[5%] w-[90%] z-[3] animate__animated wow animate__zoomIn rounded-3xl grid bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url(../Images/ContactBack.jpg)' }}>
     <div className='absolute top-[2%] left-[2%] h-[96%] w-[96%] overflow-hidden' id='contactSlides'>
-     <div className='absolute top-0 left-0  h-[100%] w-[100%] flex flex-col items-center justify-around text-xl text-white '>
+     <div className='absolute top-0 left-0  h-[100%] w-[100%] flex flex-col items-center justify-around text-xl text-white bg-green-700'>
       <h1 className='text-3xl wow animate__animated animate__flash animate__infinite'>{'<contactForm/>'}</h1>
 
       <div id='contactName' className='flex flex-col items-center justify-center w-[100%] wow animate__animated animate__bounceInLeft'>
