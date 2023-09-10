@@ -32,7 +32,6 @@ export default function Footer() {
     <img src='../Images/Leetcode.png' alt='Not' className='h-[30%] wow animate__animated animate__zoomIn'></img>
     <a href='https://leetcode.com/karanskhedkar/' target='blank' className='wow animate__animated animate__zoomIn'>karanskhedkar</a>
    </div>
-
   </div>
  )
 }
