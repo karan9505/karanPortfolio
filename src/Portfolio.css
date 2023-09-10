@@ -3,7 +3,7 @@
  height: 0px;
 }
 ::-webkit-scrollbar-thumb{
- background-color: white;
+ background-color: rgb(88 28 135);
 }
 #astroLogo{
   animation-duration: 35s;

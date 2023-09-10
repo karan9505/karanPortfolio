@@ -11,7 +11,7 @@ import ContactForm from './Components/ContactForm'
 import Footer from './Components/Footer'
 export default function Portfolio() {
 
-  // const [constactForm, setContactForm] = useState(false);
+  const wh = document.documentElement.clientHeight;
 
   const el = React.useRef(null);
   React.useEffect(() => {
@@ -33,6 +33,7 @@ export default function Portfolio() {
     new WOW.WOW({
       live: false
     }).init();
+    cal();
   }, []);
 
   const phoneViewEnable = () => {
@@ -61,18 +62,28 @@ export default function Portfolio() {
     document.getElementById('phoneMenuProjects').style.display = 'none';
     document.getElementById('phoneMenuContact').style.display = 'none';
   }
+  if (document.getElementById('ld') !== null)
+    console.log(document.getElementById('ld').getBoundingClientRect().top)
 
-  window.addEventListener('scroll', () => {
-    // console.log(document.documentElement.scrollTop)
-    let rewWidth = Math.ceil((document.documentElement.scrollTop / 4552) * 100);
+  let height;
+  let flag = 1;
+  const cal = () => {
+    if (flag) {
+      // console.log("cal hei")
+      flag = 0;
+      height = Math.ceil(document.getElementById('ld').getBoundingClientRect().top) - wh;
+    }
+    console.log(height)
+    let rewWidth = Math.ceil((document.documentElement.scrollTop / height) * 100);
     if (document.documentElement.scrollTop === 0) {
       document.getElementById("myNavbar").style.backgroundColor = 'rgba(0,0,0,0)';
     }
     else {
       document.getElementById("myNavbar").style.backgroundColor = 'rgba(0,0,0,0.8)';
     }
-    document.getElementById("borderBottom").style.width =`${rewWidth}%`;
-  });
+    document.getElementById("borderBottom").style.width = `${rewWidth}%`;
+  }
+  window.addEventListener('scroll', cal);
 
   const showContactForm = () => {
     let objDiv = document.getElementById('contactSlides');
@@ -234,9 +245,10 @@ export default function Portfolio() {
         <ZomatoClone/>
         <C2WLib />
         <UpworkClone />
-        <ContactForm />
+        <ContactForm/>
       </div>
       <Footer />
+      <div id='ld'></div>
     </>
 
   )
