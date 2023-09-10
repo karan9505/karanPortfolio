@@ -2,36 +2,35 @@ import React from 'react'
 
 export default function Footer() {
  return (
-  <div className='bg-[rgba(0,0,0,0.6)] grid md:grid-cols-3 grid-cols-1 text-white lg:mx-20 md:mx-5 mt-32 md:mb-5 md:rounded-xl md:text-[12px] text-xl'>
-
+  <div className='bg-[rgba(0,0,0,0.6)] grid md:grid-cols-3 grid-cols-1 text-white lg:mx-20 md:mx-5 mt-32 md:mb-5 mx-2 mb-2 rounded-xl text-[14px]'>
    <div className='flex justify-center items-center gap-5 md:my-5 hover:cursor-pointer '>
-    <img src='../Images/Location.png' alt='Not' className='h-[30%]'></img>
-    <h1>Narhe, Pune</h1>
+    <img src='../Images/Location.png' alt='Not' className='h-[30%] wow animate__animated animate__fadeInLeft'></img>
+    <a href='http://surl.li/kywlf' target='blank' className='wow animate__animated animate__fadeInRight'>Narhe, Pune</a>
    </div>
 
    <div className='flex justify-center items-center gap-5 md:my-5 hover:cursor-pointer'>
-    <img src='../Images/Phone.png' alt='Not' className='h-[30%]'></img>
-    <h1>7063926776</h1>
+    <img src='../Images/Phone.png' alt='Not' className='h-[30%] wow animate__animated animate__fadeInLeft'></img>
+    <h1 className='wow animate__animated animate__fadeInRight'>7063926776</h1>
    </div>
 
    <div className='flex justify-center items-center gap-5 md:my-5 hover:cursor-pointer'>
-    <img src='../Images/Mail.png' alt='Not' className='h-[30%]'></img>
-    <h1>karanskhedkar@gmail.com</h1>
+    <img src='../Images/Mail.png' alt='Not' className='h-[30%] wow animate__animated animate__fadeInLeft'></img>
+    <a href="mailto: karanskhedkar@gmail.com" target='blank' className='wow animate__animated animate__fadeInRight'>karanskhedkar@gmail.com</a>
    </div>
 
    <div className='flex justify-center items-center gap-5 md:mb-5 hover:cursor-pointer '>
-    <img src='../Images/Linkedin.png' alt='Not' className='h-[30%]'></img>
-    <h1>Karan S Khedkar</h1>
+    <img src='../Images/Linkedin.png' alt='Not' className='h-[30%] wow animate__animated animate__fadeInLeft'></img>
+    <a href='http://www.linkedin.com/in/karan-s-khedkar' target='blank' className='wow animate__animated animate__fadeInRight'>Karan S Khedkar</a>
    </div>
 
    <div className='flex justify-center items-center gap-5 md:mb-5 hover:cursor-pointer '>
-    <img src='../Images/Github.png' alt='Not' className='h-[30%]'></img>
-    <h1>karan9505</h1>
+    <img src='../Images/Github.png' alt='Not' className='h-[30%] wow animate__animated animate__fadeInLeft'></img>
+    <a href='https://github.com/karan9505' target='blank' className='wow animate__animated animate__fadeInRight'>karan9505</a>
    </div>
 
    <div className='flex justify-center items-center gap-5 md:mb-5 hover:cursor-pointer '>
-    <img src='../Images/Leetcode.png' alt='Not' className='h-[30%]'></img>
-    <h1>karanskhedkar</h1>
+    <img src='../Images/Leetcode.png' alt='Not' className='h-[30%] wow animate__animated animate__fadeInLeft'></img>
+    <a href='https://leetcode.com/karanskhedkar/' target='blank' className='wow animate__animated animate__fadeInRight'>karanskhedkar</a>
    </div>
 
   </div>
