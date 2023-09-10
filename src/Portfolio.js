@@ -8,6 +8,7 @@ import ZomatoClone from './Components/ZomatoClone'
 import C2WLib from './Components/C2WLib'
 import UpworkClone from './Components/UpworkClone'
 import ContactForm from './Components/ContactForm'
+import Footer from './Components/Footer'
 export default function Portfolio() {
 
   // const [constactForm, setContactForm] = useState(false);
@@ -233,8 +234,9 @@ export default function Portfolio() {
         <ZomatoClone/>
         <C2WLib />
         <UpworkClone />
-        <ContactForm/>
+        <ContactForm />
       </div>
+      <Footer />
     </>
 
   )
