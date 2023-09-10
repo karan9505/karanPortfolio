@@ -34,22 +34,24 @@ export default function UpworkClone() {
         </div>
 
         {/* <a href='https://www.youtube.com/watch?v=mBqUNr6FVvA' target='blank'><img src='../Images/YT.png' alt='Not' className='lg:h-6 md:h4 h-5'></img></a> */}
-        <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
+        <p className='text-white text-justify wow animate__animated animate__fadeInUp'>
 
           The "Upwork Clone" project is a versatile online platform, closely resembling the popular freelancing website, Upwork. Built using cutting-edge technologies like Spring Boot for the backend and ReactJS for the frontend, it offers a seamless and responsive user experience.
         </p>
         <br></br>
-        <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
+        <p className='text-white text-justify wow animate__animated animate__fadeInUp'>
           On the client side, users can post job listings, specifying their project requirements, budget, and timeline. They can browse freelancer profiles, evaluate proposals, and hire the most suitable candidate for their project. The platform provides a dedicated project management section for clients to oversee their projects.</p>
         <br></br>
-        <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
+        <p className='text-white text-justify wow animate__animated animate__fadeInUp'>
           Freelancers, on the other hand, can search and apply for job postings that match their skills and expertise. Once hired by a client, they can commence work and receive payments upon project completion. The platform ensures a secure and transparent payment process.</p>
         <br></br>
-        <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
+        <p className='text-white text-justify wow animate__animated animate__fadeInUp'>
           Both clients and freelancers have access to personalized account sections where they can manage their profiles, track earnings, and maintain project and transaction records.</p>
-        <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
+        <br></br>
+        <p className='text-white text-justify wow animate__animated animate__fadeInUp'>
           A standout feature of this project is its real-time chat functionality, powered by WebSockets. This enables direct and instant communication between clients and freelancers, ensuring efficient collaboration and project management.</p>
-        <p className='text-white text-justify wow animate__animated animate__bounceInUp'>
+        <br></br>
+        <p className='text-white text-justify wow animate__animated animate__fadeInUp'>
           In summary, the "Upwork Clone" project is a comprehensive freelancing platform that connects clients with skilled professionals, offering secure payments, real-time communication, and a responsive user experience. It's an ideal solution for freelancers and clients looking to collaborate on various projects.</p>
       </div>
     </>
