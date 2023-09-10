@@ -165,10 +165,10 @@ export default function Portfolio() {
 
       <div className='grid lg:grid-cols-2 lg:mb-0  lg:h-screen w-screen'>
         <div className='text-white lg:pt-32 lg:pl-20 pt-44 px-5'>
-          <h1 className='text-4xl font-semibold mb-3 animate__animated animate__backInDown'>Hi!i!i, i am</h1>
+          <h1 className='text-4xl font-semibold mb-3 animate__animated animate__backInDown' id='hiText'>Hi!i!i, i am</h1>
           <h1 ref={el} className='inline text-6xl md:text-8xl font-extrabold text-purple-500 '></h1>
-          <h1 className='my-4 text-2xl animate__animated animate__backInUp'>Welcome to my profile</h1>
-          <h1 className='text-justify animate__animated animate__backInRight '>
+          <h1 className='my-4 text-2xl animate__animated animate__backInUp' id='welcomeText'>Welcome to my profile</h1>
+          <h1 className='text-justify animate__animated animate__backInRight' id="aboutMeText">
             Hello, I'm Karan S Khedkar, a passionate tech enthusiast who embarked on the exciting journey of coding and programming just last year.
             <br></br>
             In a relatively short span of time, I've delved into the world of programming languages, gaining proficiency in languages such as C, C++, Python, JavaScript, HTML, CSS...
@@ -178,7 +178,7 @@ export default function Portfolio() {
             I invite you to explore my portfolio, where you'll find examples of my work showcasing my coding journey so far. Whether you have a project in mind, want to discuss technology trends, or simply share your enthusiasm for tech, feel free to get in touch. Together, we can build remarkable digital experiences.
           </h1>
         </div>
-        <div className='flex items-center justify-center wow animate__animated animate__backInUp  mt-20'>
+        <div className='flex items-center justify-center wow animate__animated animate__backInUp  mt-20' id='astroImgWrap'>
           <img src='../Images/Astro.png' alt='Not' className='h-96 wow animate__animated animate__shakeY animate__infinite lg:mt-0' id="astroLogo"></img>
         </div>
       </div>

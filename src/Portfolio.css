@@ -8,6 +8,9 @@
 #astroLogo{
   animation-duration: 35s;
 }
+#astroImgWrap,#hiText,#aboutMeText,#welcomeText{
+  animation-duration: 5s;
+}
 .delayAnimate{
   animation-delay: 0.5s;
 }
