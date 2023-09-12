@@ -5,7 +5,7 @@ export default function Footer() {
   <div className='bg-[rgba(0,0,0,0.6)] grid md:grid-cols-3 grid-cols-1 text-white lg:mx-20 md:mx-5 mt-32 md:mb-5 mx-2 mb-2 rounded-xl text-[14px]'>
    <div className='flex justify-center items-center gap-5 md:my-5 hover:cursor-pointer '>
     <img src='../Images/Location.png' alt='Not' className='h-[30%] wow animate__animated animate__zoomIn'></img>
-    <a href='http://surl.li/kywlf' target='blank' className='wow animate__animated animate__zoomIn'>Narhe, Pune</a>
+    <a href='http://surl.li/lajth' target='blank' className='wow animate__animated animate__zoomIn'>Narhe, Pune</a>
    </div>
 
    <div className='flex justify-center items-center gap-5 md:my-5 hover:cursor-pointer'>
