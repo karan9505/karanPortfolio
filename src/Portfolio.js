@@ -15,13 +15,13 @@ export default function Portfolio() {
   const el = React.useRef(null);
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['Karan', 'Khedkar', 'Frontend', 'Backend', 'Developer'],
+      strings: [`&lt;karan&sol;&gt;`, `&lt;khedkar&sol;&gt;`, `&lt;frontEnd&sol;&gt;`, `&lt;backEnd&sol;&gt;`, `&lt;fullStack&sol;&gt;`, `&lt;developer&sol;&gt;`],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 1000,
       loop: true,
       showCursor: true,
-      cursorChar: '<'
+      cursorChar: '<>'
     });
     return () => {
       typed.destroy();
@@ -166,7 +166,7 @@ export default function Portfolio() {
       <div className='grid lg:grid-cols-2 lg:mb-0  lg:h-screen w-screen'>
         <div className='text-white lg:pt-32 lg:pl-20 pt-44 px-5'>
           <h1 className='text-4xl font-semibold mb-3 animate__animated animate__backInDown' id='hiText'>Hi!i!i, i am</h1>
-          <h1 ref={el} className='inline text-6xl md:text-8xl font-extrabold text-purple-500 '></h1>
+          <h1 ref={el} className='inline text-[45px] md:text-8xl font-extrabold text-purple-500 '></h1>
           <h1 className='my-4 text-2xl animate__animated animate__backInUp' id='welcomeText'>Welcome to my profile</h1>
           <h1 className='text-justify animate__animated animate__backInRight' id="aboutMeText">
             Hello, I'm Karan S Khedkar, a passionate tech enthusiast who embarked on the exciting journey of coding and programming just last year.
@@ -224,7 +224,7 @@ export default function Portfolio() {
 
       <div className='grid grid-cols-3 lg:mt-56 lg:px-20 px-5' id="myProjects">
         <div className='hidden md:block col-span-full'>
-          <div className='col-span-full  justify-end items-center flex text-white md:text-6xl text-2xl lg:pt-20 my-20'>
+          <div className='col-span-full  justify-center lg:justify-end items-center flex text-white md:text-6xl text-2xl lg:pt-20 my-20'>
             <div className='wow animate__animated animate__zoomInLeft delayAnimate'>projects</div>
             <div>-</div>
             <div className='text-purple-500 wow animate__animated animate__zoomInUp delayAnimate'>And</div>
