@@ -4,7 +4,7 @@ export default function ZomatoClone() {
   return (
     <>
       <div className='lg:col-span-1 col-span-3 flex items-center  justify-center lg:order-1 mt-24 lg:mt-0'>
-        <img src='../Images/Z.gif' className='lg:h-64 h-36 lg:mt-20 wow animate__animated animate__zoomIn' id="zomatoLogo"></img>
+        <img src='../Images/Z.gif' className='lg:h-64 h-36 lg:mt-20 wow animate__animated animate__zoomIn' id="zomatoLogo" alt='Not'></img>
       </div>
       <div className='lg:col-span-2 col-span-3 flex flex-col lg:items-end items-center justify-center lg:order-2'>
 
@@ -36,7 +36,7 @@ export default function ZomatoClone() {
         <a href='https://www.youtube.com/watch?v=mBqUNr6FVvA' target='blank'><img src='../Images/YT.png' alt='Not' className='lg:h-10 md:h-8 h-5 md:mb-0 mb-2'></img></a>
         <p className='text-white text-justify wow animate__animated animate__fadeInUp'>
 
-          The "Zomato Clone" project is a feature-rich web application designed to replicate the functionality of the popular food delivery and restaurant discovery platform, Zomato. This project is built using the ReactJS framework for the frontend and the Spring Boot framework for the backend, offering a seamless user experience for both admins and users.</p>
+          The "Zomato Clone" project is a feature-rich web application designed to replibackendcate the functionality of the popular food delivery and restaurant discovery platform, Zomato. This project is built using the ReactJS framework for the frontend and the Spring Boot framework for the backend, offering a seamless user experience for both admins and users.</p>
         <br></br>
         <p className='text-white text-justify wow animate__animated animate__fadeInUp'>
           On the admin side, authorized administrators have the ability to manage restaurant listings effortlessly. They can add new restaurants, delete outdated listings, and update restaurant details, including menus. This two-sided admin control ensures that the platform's content remains up-to-date and accurate.</p>

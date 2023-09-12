@@ -4,7 +4,7 @@ export default function C2WLib() {
   return (
     <>
       <div className='lg:col-span-1 col-span-3 flex items-center justify-center lg:order-4 mt-24 lg:mt-0'>
-        <img src='../Images/Code.gif' className='lg:h-64 h-36 rounded-2xl wow animate__animated animate__zoomIn' id="libLogo"></img>
+        <img src='../Images/Code.gif' className='lg:h-64 h-36 rounded-2xl wow animate__animated animate__zoomIn' id="libLogo" alt='Not'></img>
       </div>
       <div className='lg:col-span-2 col-span-3 flex flex-col lg:items-start items-center justify-center lg:order-3'>
         <div className='hidden md:block'>

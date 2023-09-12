@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Typed from 'typed.js'
 import './Portfolio.css'
 import 'animate.css'
@@ -12,7 +12,6 @@ import Footer from './Components/Footer'
 export default function Portfolio() {
 
   const wh = document.documentElement.clientHeight;
-
   const el = React.useRef(null);
   React.useEffect(() => {
     const typed = new Typed(el.current, {
@@ -30,11 +29,12 @@ export default function Portfolio() {
   }, []);
 
   React.useEffect(() => {
+    console.log('frontEndStarted')
     new WOW.WOW({
       live: false
     }).init();
     cal();
-  }, []);
+  },[]);
 
   const phoneViewEnable = () => {
     document.getElementById('phoneOptions').style.transform = 'translateX(-100%)';
@@ -73,7 +73,7 @@ export default function Portfolio() {
       flag = 0;
       height = Math.ceil(document.getElementById('ld').getBoundingClientRect().top) - wh;
     }
-    console.log(height)
+    // console.log(height)
     let rewWidth = Math.ceil((document.documentElement.scrollTop / height) * 100);
     if (document.documentElement.scrollTop === 0) {
       document.getElementById("myNavbar").style.backgroundColor = 'rgba(0,0,0,0)';
@@ -120,7 +120,7 @@ export default function Portfolio() {
       </div>
       {/* <img src='../Images/LandBack.jpg' alt='Not' className=''></img> */}
       <div id="phoneOptions" className='fixed h-screen w-screen bg-[rgba(0,0,0,0.8)] z-[20]' onClick={(e) => { phoneViewDisable(e) }}>
-        <img src='../Images/X.png' className='absolute h-[40px] w-[40px] p-2 bg-white right-5 top-5  rounded-lg' id='X'></img>
+        <img src='../Images/X.png' className='absolute h-[40px] w-[40px] p-2 bg-white right-5 top-5  rounded-lg' id='X' alt='Not'></img>
         <div className='absolute grid bg-purple-850 content-center h-[60%] w-[100%] top-[20%] gap-24 rounded-3xl text-4xl '>
           {/* <div className='text-white text-4xl flex justify-center items-center phoneMenu'>
             <h1 id='phoneMenuHome'>HOME</h1>
@@ -179,7 +179,7 @@ export default function Portfolio() {
           </h1>
         </div>
         <div className='flex items-center justify-center wow animate__animated animate__backInUp  mt-20' id='astroImgWrap'>
-          <img src='../Images/Astro.png' alt='Not' className='h-96 wow animate__animated animate__shakeY animate__infinite lg:mt-0' id="astroLogo"></img>
+          <img src='../Images/Astro.png' alt='Not' className='h-[80%] wow animate__animated animate__shakeY animate__infinite lg:mt-0' id="astroLogo"></img>
         </div>
       </div>
 

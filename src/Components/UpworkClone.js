@@ -4,7 +4,7 @@ export default function UpworkClone() {
   return (
     <>
       <div className='lg:col-span-1 col-span-3 flex items-center  justify-center lg:order-5 mt-24 lg:mt-0'>
-        <img src='../Images/Freelance.gif' className='lg:h-64 h-36 lg:mt-20 wow animate__animated animate__zoomIn' id="upworkLogo"></img>
+        <img src='../Images/Freelance.gif' className='lg:h-64 h-36 lg:mt-20 wow animate__animated animate__zoomIn' id="upworkLogo" alt='Not'></img>
       </div>
       <div className='lg:col-span-2 col-span-3 lg:order-0 flex flex-col lg:items-end items-center justify-center lg:order-6'>
 
